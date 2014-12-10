@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  
+ 
+  <script type='text/javascript'>
+  google.load('visualization', '1', {'packages': ['geomap']});
+  google.setOnLoadCallback(drawMap);
+ 
+  function drawMap(){
+  var data = google.visualization.arrayToDataTable([['State','Count'],
+  <%  for ( var i=1; i < state.length ;i++){ %>
+	 ['<%= state[i].statename%>', <%=state[i].count%>],
+  <% } %>
+ ]);
+ /*  }
+ */
+      var options = {};
+      options['dataMode'] = 'regions';
+      options['region'] = 'US';	
+
+    var container = document.getElementById("map_canvas");
+    
+        var geomap = new google.visualization.GeoMap(container);
+
+        geomap.draw(data, options);
+    
+        }  
+  </script>
+  </head>
+  <body >
+  <div id='map_canvas'></div>
+  
+ 
+ 
+  </body>
+</html>
