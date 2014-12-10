@@ -1,7 +1,5 @@
 body {
-  padding: 0px;
-  padding-left: 80px;
-padding-right: 80px;
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -10,6 +8,6 @@ a {
 }
 
 element.style {
-padding-top: 80px;
-padding-bottom: 80px;
+padding-bottom: 10px;
+padding-top: 10px;
 }
