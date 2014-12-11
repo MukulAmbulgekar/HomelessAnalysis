@@ -341,9 +341,12 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+    padding-top: 100px;
+padding-bottom: 100px;
     }
 }
+
+
 
 .service-heading {
     margin: 15px 0;
