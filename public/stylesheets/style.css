@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   padding: 0px;
   padding-left: 80px;
@@ -12,4 +13,20 @@ a {
 element.style {
 padding-top: 80px;
 padding-bottom: 80px;
+=======
+body {
+  padding: 0px;
+  padding-left: 80px;
+padding-right: 80px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+element.style {
+padding-top: 80px;
+padding-bottom: 80px;
+>>>>>>> FETCH_HEAD
 }
