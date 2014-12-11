@@ -18,27 +18,17 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-  
-  
- <div class="dropdown">
-<!--   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-    Select Year
-    <span class="caret"></span>
-  </button> -->
-  
-  <form id="year" action="/stateData" method="post">
- <select name="year">Select Year
- 
-  <option value="2013" name="year">2013</option>
-  <option value="2011" name="year">2011</option>
-  <option value="2009" name="year">2009</option>
 
-</select>
-<input type="submit" value="Submit">
-</form>
-</div>
-
-
+ 		<div class="dropdown"> 
+		  <form id="year" action="/stateData" method="post">
+					 <select name="year">Select a Year
+						  <option value="2013" name="year">2013</option>
+						  <option value="2011" name="year">2011</option>
+						  <option value="2009" name="year">2009</option>					
+					</select>
+				<input type="submit" value="Submit">
+		 </form>
+		</div>
 
 
  <script src="js/jquery.js"></script>
